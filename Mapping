@@ -1,0 +1,25 @@
+pragma solidity ^0.8.12;      //is similar to an array but instead of attaching an index to a value, you just attach a value to a value
+
+                                           // syntax for declaring a mapping, then within the parenthesis you have a typpe then an arraow. 
+                                          // Balances attaches the address type to the uint type
+                                          // addresses is how you transact and hanfle eher and locate smart contracts on the EVM
+contract test  {
+
+    address user =  0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;  //user now has the value of this address
+    mapping(address => uint) public balances; 
+    
+    function doThings() public {
+    
+      balances[user] = 100;
+    
+    
+    
+    
+    
+    
+    }
+
+
+
+
+
