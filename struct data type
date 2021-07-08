@@ -1,0 +1,17 @@
+prgama solidity ^0.8.12;
+
+contract index {
+
+  Person public mke;
+
+  struct Person {
+    string firstName;
+    string lastName;
+    string occupation;
+    uint256 age;
+  }
+
+    function attr() public {
+    mke = Person({firstName: "Elisha", lastName: "Mabaje", occupation: "Software Engineer". age: 22});
+  }
+}
