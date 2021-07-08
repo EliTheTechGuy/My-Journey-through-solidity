@@ -1,0 +1,17 @@
+pragama solidity ^0.8.12;
+
+contract test {
+  bool constant trueOrFalse = true;
+    uint8 number8 = 2; //unasigned intger 
+    uint16 number16 = 20;  // they do not have a minus in front of them 
+    uint256 number256 = 20000000;
+    uint number = 20000000000; // regular Uint defaults to 256 if byte size not specified 
+    
+    
+    int negativeNumber = -10000000000 //can be negative and assigned
+    
+    
+    //string basicString = "Hello";
+    
+    string[] public stringArray = ["hi", 'Hello']; // public value on the blockahin that anyone can use
+    }
