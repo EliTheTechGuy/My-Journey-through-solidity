@@ -1,0 +1,16 @@
+pragma solidity ^0.8.12;
+
+contract {
+  address public owner;
+  
+  constructor() {  //runs one time and owner gets sent to sender. who ever deploys this contract, is going to get set to owner
+  
+    owner = msg.sender;
+    
+   }
+   function changeOwner(address newOwner) public {
+    require(msg.sender == owner, "Only the owner can change the owner!"); // require is a special function, it itakes 1 or 2 parameters. changes the owner
+    
+    owner = newOnwer;
+ }
+}
