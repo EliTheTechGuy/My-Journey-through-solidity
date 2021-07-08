@@ -1,0 +1,8 @@
+pragma solidity ^0.8.12; 
+
+contract test {
+
+      uint256 number =2;
+      function doMatch() public pure returns(uint256) { //pure function neither changes the state or makes a call to the stake. does not view or change any variables
+      return 1+1;
+}
