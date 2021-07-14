@@ -1,0 +1,40 @@
+pragma solidity ^0.8.12.;
+
+
+        // events is something that gets thrown into a function, it gets thrown on run time and youll see the event in the transaction log 
+        // Modifier is a mini function that gets run in a function
+        
+contract Test {
+
+  event logUser(address indexed _user, unit _amount);
+  
+  modifier onlyOneEther(uint 256 _amount){  // returns the value of the ether from the transaction, so if 10 eth are sent then the value of msg is 10 ether.
+    require(msg.value == 1 ether); // error will occur is 1 ether isnt placed
+    _; // underscore and semi colon is added to end a modifier.
+    }
+  
+  function sendOneEth() public payable onlyOneEth(3) {  //
+    emit logUser(msg.sender, msg.value); // this function emits ms.g sender and value 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
