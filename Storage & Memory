@@ -1,0 +1,44 @@
+pragma solidity ^0.8.4;
+
+contract test {  
+
+    uint256[] public uintArray;
+    
+     function happyFunction() public {
+     
+     
+          uintArray.push(5); // Arrays are dynamic, push just add a value into the array
+          uintArray.push(8);
+          
+          uint256[] memory newArray = uintArray; // memorygets forgotten at the end of the function 
+          
+          newArray[0] = 0;
+
+
+
+// Storage  is permenant 
+// memory saves on gas cost cuz it is tempory 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
