@@ -1,0 +1,29 @@
+pragma solidity ^0.8.4;
+
+contract Bank { 
+
+    mapping(address +. uint256) public accounts;
+    
+    modifier hasFunds(uint256 _amount) { 
+        require(_amount <= accounts[msg.sender], "Does not own sufficient funds. ");
+        
+        }
+        
+        
+        function deposit() public payable { 
+            acoounts[msg.sender] += msg.value;
+           }
+           
+           
+           function withdraw(uint256 _amount) public hasFunds(_amount) {
+                payable(msg.sender).transfer(_amount); // transfer transfers from our smart contract back to our msg.sender
+                
+           }
+           
+           function checkAssets() public view returns(uint256) {
+                return address(this).balance;
+      }
+    
+  
+
+}
